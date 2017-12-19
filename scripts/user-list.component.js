@@ -84,7 +84,7 @@ angular.
       this.GetUsersAfterId = function(){
          $http({
         method: 'GET',
-        url: 'http://api.github.com/users?since='+(this.id - 1) +'&per_page=25'
+        url: 'https://api.github.com/users?since='+(this.id - 1) +'&per_page=25'
       }).then(function successCallback(response) {
               if(response != null)
                 $scope.$ctrl.users = response.data; 
@@ -117,7 +117,7 @@ angular.
         {
          $http({
          method: 'GET',
-         url: 'http://api.github.com/users/'+user.login
+         url: 'https://api.github.com/users/'+user.login
         }).then(function successCallback(response) {
                 $scope.$ctrl.user = response.data; 
                 $('#userModal').modal('show') 
