@@ -1,0 +1,29 @@
+<div>
+  <p style="display: inline-block">
+    Cauta utilizatorii incepand cu id-ul:
+    <input ng-model="$ctrl.id">
+    </input>
+  </p>
+  <button  type="button" ng-click="$ctrl.GetUserAfterId()">Cauta</button>
+
+  <table id="table" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Avatar</th>
+      <th>Url</th>
+      <th>Admin</th>
+    </tr>
+    </thead>
+    <tbody ng-repeat="user in $ctrl.users">
+      <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.login}}</td>
+        <td>{{user.avatar_url}}}</td>
+        <td>{{user.url}}</td>
+        <td>{{user.site_admin ? "Da" : "Nu"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
