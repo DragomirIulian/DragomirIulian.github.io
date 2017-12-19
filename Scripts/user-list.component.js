@@ -65,20 +65,6 @@ angular.
       scope = $scope;
       this.user = [];
       this.users = [
-        /*{
-          id: 123,
-          login: 'Gogu',
-          avatar_url : "http://i.imgur.com/hfH9CiC.png"
-
-        }, {
-          id: 14,
-          login: 'Gogaie',
-          avatar_url : "http://i.imgur.com/hfH9CiC.png"
-        }, {
-          id: 64,
-          login: 'Gigi',
-          avatar_url : "http://i.imgur.com/hfH9CiC.png"
-        }*/
       ];
       this.tableParams = new NgTableParams(
         {  
